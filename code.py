@@ -107,7 +107,7 @@ print(vk.users_info())
             return {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json',
-                'Authorization': 'OAuth {}'.format(self.token)
+                'Authorization': 'OAuth {}'.format(self.token)   #токен, полученный из полигона Яндекс
             }
 
         def _get_upload_link(self, disk_file_path):
